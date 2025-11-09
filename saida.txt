@@ -1,2 +1,2 @@
-rota até a esquina #3: 1 4 5 6 2 3 
-tempo calculado para rota = 7 min.
+rota até a esquina #6: 1 2 4 5 6 
+tempo calculado para rota = 10 min.
