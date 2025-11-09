@@ -122,7 +122,6 @@ int main(int argc, char *argv[]){
 
 
     // escreve a rota mais rápida e o tempo no terminal
-    printf("rota até a esquina #%d: ", esquina_incendio);
     imprimirRota(stdout, antecessor, esquina_incendio - 1);
     printf("tempo calculado para rota = %d min.\n", dist[esquina_incendio - 1]);
 
