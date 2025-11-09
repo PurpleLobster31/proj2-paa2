@@ -33,8 +33,14 @@ void imprimirRota(FILE *saida, int antecessor[], int destino) {
     fprintf(saida, "\n");
 }
 
-int main(){ 
-    FILE *arquivo = fopen("arquivo.txt", "r");
+int main(int argc, char *argv[]){ 
+    
+    if (argc != 2) {
+        printf("Modo de uso: ./bombeiros {arquivo_entrada.txt}\n");
+        return 1;
+    }
+
+    FILE *arquivo = fopen(argv[1], "r");
 
     if (arquivo == NULL){
         printf("Erro ao ler o arquivo.\n");
